@@ -25,8 +25,10 @@ mkdir -p ~/go_src/bin
 The GOPATH env variable need to be mapped form /go_path in container 
 to a DIR on the host where Go src files are
 then start the image
-
+```
 docker run -it -v ~/go_src:/go_path --name dev_image image_name bash
+```
+source node environment via nvm.
 ```bash
 . ~/.nvm/nvm.sh
 nvm use 4
