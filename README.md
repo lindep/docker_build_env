@@ -14,7 +14,7 @@ Node will be installed via nvm
 docker build --tag "image_name" .
 ```
 
-Create Golang dev environment
+Create Golang [workspace](https://golang.org/doc/code.html#Workspaces) environment 
 
 ```bash
 mkdir -p ~/go_src/src
