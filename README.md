@@ -7,14 +7,20 @@ Build and development environment for Node and Go language in a Docker container
 ```bash
 git clone https://github.com/lindep/docker_build_env.git build_dev
 ```
-* Download Go binaries and extract into go directory. The docker build process will copy the contents of this directory to /usr/local/go
+* Download latest Linux 64-bit [Go binaries](https://golang.org/dl/) and extract into go directory. The docker build process will copy the contents of this directory to /usr/local/go and set environment variables.
 * Build docker image.
 
 ```bash
 docker build --tag "image_name" .
 ```
 
-Node v4.2.4 will be installed via nvm and set as the default version.
+Docker build will install latest Node v4.x version via nvm and set as the default version.
+When using the image any other version can be installed using nvm i.e. install node 5
+```
+. ~/.nvm/
+nvm install node 5
+nvm ls
+```
 
 Create Golang [workspaces](https://golang.org/doc/code.html#Workspaces) environment 
 
