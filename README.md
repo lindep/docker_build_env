@@ -17,7 +17,7 @@ docker build --tag "image_name" .
 Docker build will install latest Node v4.x version via nvm and set as the default version.
 When using the image any other version can be installed using nvm i.e. install node 5
 ```
-. ~/.nvm/
+. ~/.nvm/nvm.sh
 nvm install node 5
 nvm ls
 ```
