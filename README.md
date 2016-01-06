@@ -3,16 +3,18 @@ Docker: Node and Go dev environment
 
 Build and development environment for Node and Go language
 
-Clone repo
+* Clone repo
 ```bash
 git clone https://github.com/lindep/docker_build_env.git build_dev
 ```
-Download Go binaries and extract into go DIR
-Create docker image
-Node will be installed via nvm
+* Download Go binaries and extract into go directory.
+* Create docker image.
+
 ```bash
 docker build --tag "image_name" .
 ```
+
+Node will be installed via nvm.
 
 Create Golang [workspaces](https://golang.org/doc/code.html#Workspaces) environment 
 
