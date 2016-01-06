@@ -7,8 +7,8 @@ Build and development environment for Node and Go language
 ```bash
 git clone https://github.com/lindep/docker_build_env.git build_dev
 ```
-* Download Go binaries and extract into go directory.
-* Create docker image.
+* Download Go binaries and extract into go directory. The docker build process will copy the contents of this directory to /usr/local/go
+* Build docker image.
 
 ```bash
 docker build --tag "image_name" .
