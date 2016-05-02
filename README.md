@@ -7,7 +7,7 @@ Build and development environment for Node and Go language in a Docker container
 ```bash
 git clone https://github.com/lindep/docker_dev_env.git build_dev
 ```
-2. Download latest Linux 64-bit [Go binaries](https://golang.org/dl/) and extract into go directory.  
+2. Download latest Linux 64-bit [Go binaries](https://golang.org/dl/) and extract into **__go__** directory created by git clone above.  
 The docker build process will copy the contents of this directory to **__/usr/local/go__** and set environment variables.
 3. Build docker image.
 ```bash
