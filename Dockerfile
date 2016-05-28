@@ -16,7 +16,7 @@ RUN mkdir ~/.nvm
 RUN git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 
 ENV NVM_DIR="/root/.nvm
-RUN . ~/.nvm/nvm.sh && nvm install v4.2 && nvm alias default 4
+RUN . ~/.nvm/nvm.sh && nvm install v4 && nvm alias default 4
 RUN . ~/.nvm/nvm.sh && nvm use default && npm install tape && npm install -g \
 	mocha \
 	istanbul \
