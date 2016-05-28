@@ -25,7 +25,7 @@ RUN . ~/.nvm/nvm.sh && nvm use default && npm install tape && npm install -g \
 	babel-cli
 
 # Download the golang binaries and extract to DIR go/go
-COPY go /usr/local/go/go
+COPY go/go /usr/local/go
 COPY go_profile.sh /etc/profile.d/go_profile.sh
 ENV PATH $PATH:/usr/local/go/bin
 # start image with mapped GOPATH on host pointing to /go_path in container

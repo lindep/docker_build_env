@@ -24,6 +24,7 @@ nvm ls
 ```
 
 Create Golang [workspaces](https://golang.org/doc/code.html#Workspaces) environment on host. This directory will then be mapped to ***/go_path*** in container. The Go directory structure below is a mininum requirement but follow instructions from Go workspaces link.  
+Source code will go inside the **__src__** directory.
 
 ```bash
 mkdir -p ~/go_src/src/github.com/userid/project
@@ -48,3 +49,5 @@ nvm use default
 cd /go_path OR
 cd $GOPATH
 ```
+
+Follow the *__Your first program__*  from the Golang [workspaces](https://golang.org/doc/code.html#Workspaces) link.  
